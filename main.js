@@ -8,15 +8,15 @@ function counter(num) {
         numbArr.push(new Array(fillLength - lastNumLength).fill('0').concat(i.toString()).join(''));
     }
 
-    return numbArr
+    return numbArr;
 }
 
 function loadEvent() {
     const arr = counter(200);
 
     for (const arrElement of arr) {
-        root.insertAdjacentHTML('beforeend', `<p>${arrElement}</p>`)
+        root.insertAdjacentHTML('beforeend', `<p>${arrElement}</p>`);
     }
 }
 
-window.addEventListener('load', loadEvent)
+window.addEventListener('load', loadEvent);
